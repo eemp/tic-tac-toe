@@ -1,0 +1,119 @@
+#tic-tac-toe-game {
+    /*display: none;*/
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+#tic-tac-toe-game .endofgame {
+    display: none;
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+}
+
+#tic-tac-toe-game.gameover .board {
+    opacity: 0.2;
+}
+
+#tic-tac-toe-game.gameover .endofgame {
+    display: block;
+    margin-top: 33%;
+}
+
+button#restart {
+    background: url("assets/restart.svg") no-repeat;
+    background-size: 100% 100%;
+    border: none;
+    cursor: pointer;
+    height: 33%;
+    width: 33%;
+}
+
+.position {
+    background-color: #EF9A9A;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    text-align: center;
+
+    -moz-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+}
+
+.p1.position {
+    background: url("assets/cross.svg") no-repeat;
+    background-color: #81D4FA;
+    background-size: 100% 100%;
+    cursor: default;
+}
+
+.p2.position {
+    background: url("assets/circle.svg") no-repeat;
+    background-color: #80CBC4;
+    background-size: 100% 100%;
+    cursor: default;
+}
+
+#tic-tac-toe-game.p1-turn .empty.position:hover {
+    background: url("assets/cross.svg") no-repeat;
+    background-color: #607D8B;
+    background-size: 100% 100%;
+}
+
+#tic-tac-toe-game.p2-turn .empty.position:hover {
+    background: url("assets/circle.svg") no-repeat;
+    background-color: #3d4250;
+    background-size: 100% 100%;
+}
+
+@media (min-width: 250px) {
+    #tic-tac-toe-game {
+        height: 90vw;
+        width: 90vw;
+    }
+
+    .position {
+        height: calc((90vw - 6px)/3 - 1px);
+        width: calc((90vw - 6px)/3 - 1px);
+        font-size: 18vw;
+    }
+}
+
+@media (min-width: 500px) {
+    #tic-tac-toe-game {
+        height: 50vw;
+        width: 50vw;
+    }
+
+    .position {
+        height: calc((50vw - 6px)/3 - 1px);
+        width: calc((50vw - 6px)/3 - 1px);
+        font-size: calc((50vw - 6px)/3 - 1px);
+    }
+}
+
+@media (min-width: 800px) {
+    #tic-tac-toe-game {
+        height: 35vw;
+        width: 35vw;
+    }
+
+    .position {
+        height: calc((35vw - 6px)/3 - 1px);
+        width: calc((35vw - 6px)/3 - 1px);
+        font-size: 8vw;
+    }
+}

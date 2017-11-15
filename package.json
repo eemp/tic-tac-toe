@@ -1,0 +1,20 @@
+{
+  "name": "tic-tac-toe",
+  "version": "1.0.0",
+  "description": "Tic Tac Toe game implementation with minimax based computational opponent",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --colors --progress",
+    "dev-server": "webpack-dev-server --colors --progress --inline --content-base public",
+    "watch": "webpack --colors --progress --watch"
+  },
+  "keywords": [
+    "minimax",
+    "alpha-beta pruning",
+    "tic-tac-toe"
+  ],
+  "author": "Mihir Patel",
+  "devDependencies": {
+    "webpack": "^3.8.1"
+  }
+}
