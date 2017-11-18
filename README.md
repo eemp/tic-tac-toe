@@ -1,6 +1,6 @@
 # Tic tac toe
 
-> Tic Tac Toe game implementation with minimax based computational opponent
+> Tic Tac Toe game implementation with minimax based computational opponent - [Try it!](http://eemp.io/projects/tic-tac-toe/)
 
 ## Notes
 
