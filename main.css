@@ -92,18 +92,18 @@ button#restart {
     }
 }
 
-/*@media (min-width: 500px) {*/
-    /*#tic-tac-toe-game {*/
-        /*height: 50vw;*/
-        /*width: 50vw;*/
-    /*}*/
+@media (min-width: 500px) {
+    #tic-tac-toe-game {
+        height: 50vw;
+        width: 50vw;
+    }
 
-    /*.position {*/
-        /*height: calc((50vw - 6px)/3 - 1px);*/
-        /*width: calc((50vw - 6px)/3 - 1px);*/
-        /*font-size: calc((50vw - 6px)/3 - 1px);*/
-    /*}*/
-/*}*/
+    .position {
+        height: calc((50vw - 6px)/3 - 1px);
+        width: calc((50vw - 6px)/3 - 1px);
+        font-size: calc((50vw - 6px)/3 - 1px);
+    }
+}
 
 @media (min-width: 800px) {
     #tic-tac-toe-game {
