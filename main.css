@@ -79,7 +79,7 @@ button#restart {
     background-size: 100% 100%;
 }
 
-@media (min-width: 250px) {
+@media only screen and (min-width: 250px) and (max-width: 500px) {
     #tic-tac-toe-game {
         height: 90vw;
         width: 90vw;
@@ -92,7 +92,7 @@ button#restart {
     }
 }
 
-@media (min-width: 500px) {
+@media only screen and (min-width: 500px) and (max-width: 800px) {
     #tic-tac-toe-game {
         height: 50vw;
         width: 50vw;
@@ -105,7 +105,7 @@ button#restart {
     }
 }
 
-@media (min-width: 800px) {
+@media only screen and (min-width: 800px) {
     #tic-tac-toe-game {
         height: 35vw;
         width: 35vw;
